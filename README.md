@@ -14,7 +14,7 @@ A base SmartAdmin(Bootstrap) template easy to use web admin system
 		cd /yourpath/EasyAdmin/  
 		mvn clean package -Pprod  
   b.create & init database(mysql5+)
-	  create a database named 'easy_admin'
+	  create a database named 'easy_admin'  
 	  execute /yourpath/docs/db/easy_admin.sql  
   c.deploy  
 		copy the easyadmin-web.war to tomcat webapps  
