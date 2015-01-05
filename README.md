@@ -13,7 +13,7 @@ A base SmartAdmin(Bootstrap) template easy to use web admin system
   a.build  
 		cd /yourpath/EasyAdmin/  
 		mvn clean package -Pprod  
-  b.create & init database(mysql5+)
+  b.create & init database(mysql5+)  
 	  create a database named 'easy_admin'  
 	  execute /yourpath/docs/db/easy_admin.sql  
   c.deploy  
