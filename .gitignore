@@ -10,3 +10,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+nb-configuration.xml
+/easyadmin-common/target/
+/easyadmin-common/.settings/
+/easyadmin-common/.classpath
+/easyadmin-domain/target/
+/easyadmin-domain/.settings/
+/easyadmin-domain/.classpath
+/easyadmin-web/target/
+/easyadmin-web/.settings/
+/easyadmin-web/.classpath
+/easyadmin-data/target/
+/easyadmin-data/.settings/
+/easyadmin-data/.classpath
+.project
+.classpath
+.settings
+*/logs/
