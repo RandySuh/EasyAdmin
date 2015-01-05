@@ -8,3 +8,8 @@ A base SmartAdmin(Bootstrap) template easy to use web admin system
 	b.maven3
 	c.eclipse-jee-luna
 	d.tomcat7+
+
+## User Guide
+account:admin 
+pasword:123456
+
