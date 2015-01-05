@@ -40,7 +40,7 @@ public class HomeController extends AbstractController {
 			String url = module.getLinkType() == 1 ? module.getUrl() : String.format("%s/%s", contextPath, module.getUrl());
 			String target = StringUtils.isBlank(module.getTarget()) ? "" : String.format("target=\"%s\"", module.getTarget());
 			menuBuilder.append(String.format("<li class=\"menu%s\">\r\n", index == 0 ? " menu-dashborad" : ""));
-			menuBuilder.append(String.format("	<a href=\"%s\" %s title=\"移动脸谱-%s\">\r\n", url, target, module.getName()));
+			menuBuilder.append(String.format("	<a href=\"%s\" %s title=\"EasyAdmin-%s\">\r\n", url, target, module.getName()));
 			menuBuilder.append(String.format("		<i class=\"%s\"></i>\r\n", module.getIcon()));
 			menuBuilder.append(String.format("		<span class=\"menu-item-parent\">%s</span>\r\n", module.getName()));
 			menuBuilder.append("	</a>\r\n");
@@ -65,7 +65,7 @@ public class HomeController extends AbstractController {
 			String target = StringUtils.isBlank(module.getTarget()) ? "" : String.format("target=\"%s\"", module.getTarget());
 
 			if (module.isLeaf()) {
-				menuBuilder.append(String.format("<li><a href=\"%1$s\" %2$s title=\"移动脸谱-%3$s\">%3$s</a></li>\r\n", url, target, module.getName()));
+				menuBuilder.append(String.format("<li><a href=\"%1$s\" %2$s title=\"EasyAdmin-%3$s\">%3$s</a></li>\r\n", url, target, module.getName()));
 			}
 			else {
 				menuBuilder.append("<li class=\"menu\">\r\n");
