@@ -94,7 +94,6 @@
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-quartz</artifactId>
 		</dependency>
-		<!-- test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
