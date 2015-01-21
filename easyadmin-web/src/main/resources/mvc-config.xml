@@ -9,7 +9,7 @@
 	<!-- Configures the @Controller programming model -->
 	<mvc:annotation-driven>
 		<mvc:argument-resolvers>
-			<bean class="org.easyframework.easyadmin.web.CurrentUserMethodArgumentResolver" />
+			<bean class="com.easytoolsoft.easyadmin.web.CurrentUserMethodArgumentResolver" />
 		</mvc:argument-resolvers>
 	</mvc:annotation-driven>
 	<mvc:view-controller path="/" view-name="/index" />

@@ -99,7 +99,7 @@
 	<bean id="cacheManager" class="org.apache.shiro.cache.MemoryConstrainedCacheManager" />
 
 	<!-- 凭证匹配器 -->
-	<bean id="credentialsMatcher" class="org.easyframework.easyadmin.security.RetryLimitHashedCredentialsMatcher">
+	<bean id="credentialsMatcher" class="com.easytoolsoft.easyadmin.security.RetryLimitHashedCredentialsMatcher">
 		<constructor-arg ref="cacheManager" />
 		<property name="hashAlgorithmName" value="md5" />
 		<property name="hashIterations" value="2" />
@@ -107,7 +107,7 @@
 	</bean>
 
 	<!-- Realm实现 -->
-	<bean id="shiroRealm" class="org.easyframework.easyadmin.security.EasyAdminRealm">
+	<bean id="shiroRealm" class="com.easytoolsoft.easyadmin.security.EasyAdminRealm">
 		<property name="credentialsMatcher" ref="credentialsMatcher" />
 		<property name="cachingEnabled" value="false" />
 		<!--<property name="authenticationCachingEnabled" value="true"/> -->
@@ -116,10 +116,10 @@
 		<!--<property name="authorizationCacheName" value="authorizationCache"/> -->
 	</bean>
 
-	<bean id="membershipFilter" class="org.easyframework.easyadmin.web.filters.MembershipFilter" />
+	<bean id="membershipFilter" class="com.easytoolsoft.easyadmin.web.filters.MembershipFilter" />
 
 	<!-- 基于Form表单的身份验证过滤器 -->
-	<bean id="authcFilter" class="org.easyframework.easyadmin.web.filters.AjaxFormAuthenticationFilter">
+	<bean id="authcFilter" class="com.easytoolsoft.easyadmin.web.filters.AjaxFormAuthenticationFilter">
 		<property name="usernameParam" value="username" />
 		<property name="passwordParam" value="password" />
 		<property name="rememberMeParam" value="rememberMe" />
